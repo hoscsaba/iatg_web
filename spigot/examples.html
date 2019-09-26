@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>spigot - Free CSS Template by ZyPOP</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <!--
+spigot, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+
+Download: http://zypopwebtemplates.com/
+
+License: Creative Commons Attribution
+//-->
+
+    <!-- MathJax:-->
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [
+                    ['$', '$'],
+                    ['\\(', '\\)']
+                ]
+            }
+        });
+    </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <h1><a href="/">Interaktív<span>Áramlástechnikai Gépek</span></a></h1>
+        </header>
+        <nav>
+            <ul>
+                <li class="start selected"><a href="index.html">Áttekintés</a>
+                </li>
+                <li class=""><a href="examples.html">Példák</a>
+                </li>
+<!--                 <li><a href="#">Products</a>
+                </li>
+                <li><a href="#">Solutions</a>
+                </li>
+                <li class="end"><a href="#">Contact</a>
+                </li>
+ -->            </ul>
+        </nav>
+
+        <div id="body">
+
+            <section id="content">
+
+                <article>
+                    <!--        <h2>Examples</h2> -->
+
+                    <h1><A NAME="pelda1">Gázok kompressziója</A> </h1>
+                    Ideális gázok vagy folyadékok kompressziója során az állapotváltozáshoz szükséges teljesítményt a $P=\dot{m} Y$ képlettel számíthatjuk ki, melyben $\dot{m}[kg/s]$ a tömegáramot, $Y[J/kg]$ pedig a fajlagos munkát jelöli. (Erősen összenyomható közegek -
+                    pl. levegő - esetén a tömegáram a kompresszor szívó- és nyomócsonkján megegyezik, ellentétben a térfogatárammal $Q=\dot{m}/\rho$.) A fajlagos munkát a $$Y=\int_{p_1}^{p_2} v dp=\int_{p_1}^{p_2} \frac{1}{\rho(p)} dp$$ képlet adja meg.
+                    Ahhoz, hogy a munkát kiszámítsuk, szükséges az állapotváltozás ismerete, azaz a $\rho(p)$ függvény. Tekintsük a legegyszerűbb eseteket!
+                    <ul>
+                        <li> <strong>Állandó sűrűség (folyadékok)</strong> esetén $\rho=$konstans, így $$Y=\frac{1}{\rho}\int_{p_1}^{p_2}1 dp=\frac{p_2-p_1}{\rho}$$
+
+                            <li> <strong>Izoterm állapotváltozás</strong> esetén $T=$konstans, így ideális gázra ($p/\rho=RT$) $$Y=\int_{p_1}^{p_2}\frac{RT}{p} dp=RT\int_{p_1}^{p_2}\frac{1}{p} dp=RT\ln \frac{p_2}{p_1}$$
+
+                                <li> <strong>Izentrópikus állapotváltozás</strong> esetén $p_1/\rho_1^\kappa=p/\rho^\kappa=$konstans $$Y=\frac{\kappa}{\kappa-1}RT_1 \left( \left(\frac{p_2}{p_1} \right)^{\frac{\kappa-1}{\kappa}}-1\right)=\frac{\kappa R}{\kappa-1}
+                                    \left(T_2-T_1\right)=h_2-h_1,$$ ahol $h[J/kg]$ a közeg entalpiája.
+
+                                    <li> <strong>Politrópikus állapotváltozás</strong> esetén $p_1/\rho_1^n=p/\rho^n=$konstans, így az összefüggések formálisan hasonlók az izentrópikus állapotváltozáshoz: $$Y=\frac{n}{n-1}RT_1 \left( \left(\frac{p_2}{p_1} \right)^{\frac{n-1}{n}}-1\right)=\frac{n
+                                        R}{n-1} \left(T_2-T_1\right)$$. Az $n$ politrópikus kitevőt jellemzően méréssel határozzák meg. Vegyük észre, hogy $n\rightarrow 1$ esetén izoterm állapotváltozást kapunk, míg $n=\kappa$ esetén izentrópikusat.
+                    </ul>
+
+                    Végül, ideális gáz entrópiájának megváltozása a $$s_2-s_1=c_V \ln \frac{T_2}{T_1}+R\ln \frac{\rho_1}{\rho2}$$ képlettel számítható. $\clubsuit$
+
+                    <br>Az alábbi alkalmazáson könnyen nyomonkövethetjük az egyes állapotváltozásokat:
+
+                    <APPLET CODE="AtgKompresszio.class" WIDTH=600 HEIGHT=600></APPLET>
+
+                    <h1><A NAME="pelda2">Heading H2</A> </h1>
+                    <h1><A NAME="pelda3">Heading H3</A> </h1>
+                    <h2>Heading H2</h2>
+                    <h3>Heading H3</h3>
+                    <h4>Heading H4</h4>
+                    <h5>Heading H5</h5>
+
+
+                    <p>&nbsp;</p>
+
+
+                    <h3>Lists</h3>
+                    <ul>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ul>
+
+                    <ol>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                    </ol>
+
+                    <p>&nbsp;</p>
+
+
+
+                    <h3>Code and blockquote</h3>
+                    <code>&lt;? echo('Hello world'); ?&gt;</code>
+
+                    <blockquote>
+                        <p>Mauris sit amet tortor in urna tincidunt aliquam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas</p>
+                    </blockquote>
+
+
+                    <p>&nbsp;</p>
+
+                    <h3>Table</h3>
+
+                    <table cellspacing="0">
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                        </tr <tr>
+                        <td>1</td>
+                        <td>John Smith</td>
+                        <td>28</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Fred James</td>
+                            <td>49</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Rachel Johnson</td>
+                            <td>19</td>
+                        </tr>
+
+                    </table>
+
+                    <p>&nbsp;</p>
+
+
+                    <h3>Form</h3>
+
+                    <fieldset>
+                        <legend>Form legend</legend>
+                        <form action="#" method="get">
+                            <p>
+                                <label for="name">Name:</label>
+                                <input name="name" id="name" value="" type="text" />
+                            </p>
+                            <p>
+                                <label for="email">Email:</label>
+                                <input name="email" id="email" value="" type="text" />
+                            </p>
+
+                            <p>
+                                <label for="message">Message:</label>
+                                <textarea cols="37" rows="11" name="message" id="message"></textarea>
+                            </p>
+                            <p>
+                                <input name="send" style="margin-left: 150px;" class="formbutton" value="Send" type="submit" />
+                            </p>
+                        </form>
+                    </fieldset>
+
+                </article>
+            </section>
+
+            <aside class="sidebar">
+
+                <ul>
+                    <li>
+                        <h4>Categories</h4>
+                        <ul>
+                            <li class="start"><a href="#pelda1">1: Gázok kompressziója</a>
+                            </li>
+                            <li class="selected"><a href="#pelda2">2: Sebességi háromszögek</a>
+                            </li>
+                            <li><a href="#">Commodo vestibulum sem mattis</a>
+                            </li>
+                            <li><a href="#">Sed aliquam libero ut velit bibendum</a>
+                            </li>
+                            <li><a href="#">Maecenas condimentum velit vitae</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h4>About us</h4>
+                        <ul>
+                            <li class="text">
+                                <p style="margin: 0;">Aenean nec massa a tortor auctor sodales sed a dolor. Duis vitae lorem sem. Proin at velit vel arcu pretium luctus. <a href="#" class="readmore">Read More &raquo;</a>
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h4>Search site</h4>
+                        <ul>
+                            <li class="text">
+                                <form method="get" class="searchform" action="#">
+                                    <p>
+                                        <input type="text" size="32" value="" name="s" class="s" />
+
+                                    </p>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h4>Helpful Links</h4>
+                        <ul>
+                            <li><a href="http://www.themeforest.net/?ref=spykawg" title="premium templates">Premium HTML web templates from $10</a>
+                            </li>
+                            <li><a href="http://www.dreamhost.com/r.cgi?259541" title="web hosting">Cheap web hosting from Dreamhost</a>
+                            </li>
+                            <li><a href="http://tuxthemes.com" title="Tux Themes">Premium WordPress themes</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+
+            </aside>
+            <div class="clear"></div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <ul>
+                    <li>
+                        <h4>Proin accumsan</h4>
+                    </li>
+                    <li><a href="#">Rutrum nulla a ultrices</a>
+                    </li>
+                    <li><a href="#">Blandit elementum</a>
+                    </li>
+                    <li><a href="#">Proin placerat accumsan</a>
+                    </li>
+                    <li><a href="#">Morbi hendrerit libero </a>
+                    </li>
+                    <li><a href="#">Curabitur sit amet tellus</a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <h4>Condimentum</h4>
+                    </li>
+                    <li><a href="#">Curabitur sit amet tellus</a>
+                    </li>
+                    <li><a href="#">Morbi hendrerit libero </a>
+                    </li>
+                    <li><a href="#">Proin placerat accumsan</a>
+                    </li>
+                    <li><a href="#">Rutrum nulla a ultrices</a>
+                    </li>
+                    <li><a href="#">Cras dictum</a>
+                    </li>
+                </ul>
+
+                <ul class="endfooter">
+                    <li>
+                        <h4>Suspendisse</h4>
+                    </li>
+                    <li><a href="#">Morbi hendrerit libero </a>
+                    </li>
+                    <li><a href="#">Proin placerat accumsan</a>
+                    </li>
+                    <li><a href="#">Rutrum nulla a ultrices</a>
+                    </li>
+                    <li><a href="#">Curabitur sit amet tellus</a>
+                    </li>
+                    <li><a href="#">Donec in ligula nisl.</a>
+                    </li>
+                </ul>
+
+                <div class="clear"></div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; YourSite 2010. <a href="http://zypopwebtemplates.com/">Free CSS Web Templates</a> by ZyPOP</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
