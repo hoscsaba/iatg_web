@@ -44,7 +44,7 @@
 
 				<article>
 					<h1>
-						<A NAME="pelda1">Hatásfok és Fajlagos</A>
+						<A NAME="pelda1">Hatásfok és Fajlagos Energiafogyasztás</A>
 					</h1>
 					<br>
 					<ul>
@@ -54,44 +54,19 @@
 						Java Runtime Environment szükséges. www.oracle.com)
 					</ul>
 
-					<!--Ideális gázok vagy folyadékok kompressziója során az
-					állapotváltozáshoz szükséges teljesítményt a $P=\dot{m} Y$
-					képlettel számíthatjuk ki, melyben $\dot{m}[kg/s]$ a tömegáramot,
-					$Y[J/kg]$ pedig a fajlagos munkát jelöli. (Erősen összenyomható
-					közegek - pl. levegő - esetén a tömegáram a kompresszor szívó- és
-					nyomócsonkján megegyezik, ellentétben a térfogatárammal
-					$Q=\dot{m}/\rho$.) A fajlagos munkát a $$Y=\int_{p_1}^{p_2} v
-					dp=\int_{p_1}^{p_2} \frac{1}{\rho(p)} dp$$ képlet adja meg. Ahhoz,
-					hogy a munkát kiszámítsuk, szükséges az állapotváltozás ismerete,
-					azaz a $\rho(p)$ függvény. Tekintsük a legegyszerűbb eseteket!
-					<ul>
-						<li><strong>Állandó sűrűség (folyadékok)</strong> esetén
-							$\rho=$konstans, így $$Y=\frac{1}{\rho}\int_{p_1}^{p_2}1
-							dp=\frac{p_2-p_1}{\rho}$$
-						<li><strong>Izoterm állapotváltozás</strong> esetén
-							$T=$konstans, így ideális gázra ($p/\rho=RT$)
-							$$Y=\int_{p_1}^{p_2}\frac{RT}{p} dp=RT\int_{p_1}^{p_2}\frac{1}{p}
-							dp=RT\ln \frac{p_2}{p_1}$$
-						<li><strong>Izentrópikus állapotváltozás</strong> esetén
-							$p_1/\rho_1^\kappa=p/\rho^\kappa=$konstans
-							$$Y=\frac{\kappa}{\kappa-1}RT_1 \left( \left(\frac{p_2}{p_1}
-							\right)^{\frac{\kappa-1}{\kappa}}-1\right)=\frac{\kappa
-							R}{\kappa-1} \left(T_2-T_1\right)=h_2-h_1,$$ ahol $h[J/kg]$ a
-							közeg entalpiája.
-						<li><strong>Politrópikus állapotváltozás</strong> esetén
-							$p_1/\rho_1^n=p/\rho^n=$konstans, így az összefüggések formálisan
-							hasonlók az izentrópikus állapotváltozáshoz:
-							$$Y=\frac{n}{n-1}RT_1 \left( \left(\frac{p_2}{p_1}
-							\right)^{\frac{n-1}{n}}-1\right)=\frac{n R}{n-1}
-							\left(T_2-T_1\right)$$ Az $n$ politrópikus kitevőt jellemzően
-							méréssel határozzák meg. Vegyük észre, hogy $n\rightarrow 1$
-							esetén izoterm állapotváltozást kapunk, míg $n=\kappa$ esetén
-							izentrópikusat.
-					</ul>
-
-					Végül, ideális gáz entrópiájának megváltozása a $$s_2-s_1=c_V \ln
-					\frac{T_2}{T_1}+R\ln \frac{\rho_1}{\rho2}$$ képlettel számítható.
-					$\clubsuit$ <br> <br>-->
+					A tolózárat sorosan kötjük a rendszerbe, így fojtásként viselkedik. A tolózár állásával a fojtás mértékét vagyis
+					az átfolyó vízmennyiséget tudjuk szabályozni. A hatásfok és a fajlagos energiafogyasztás a szivattyú és a csővezeték
+					KÖZÖS jellemzője.
+					<br><br>
+					A zár ellenálástényezője a nyitástól függ, minnél jobban nyitunk, annál kissebb az ellenálásényező.
+<br><br>
+					A tolózár jelleggörbéje feketével van jelölve, és az ellenálástényező függvényében változik.
+<br><br>
+					A fajlagos energiafogyasztás a vízszolgáltató számára költségként fogható fel, a szállított térfogatáram 
+					pedig bevételként, így ezek közös pénznemre számított hányadosa adja meg, hogy mekkora a "gazdaságossága" a szivattyúnak.
+<br><br>
+					A szivattyú maximális hatásfoka viszont nem feltétlenül ugyanakkora térfogatáramnál van, mint a maximális gazdaságosság, így előfordulhat, hogy a szolgáltatónak
+					megéri nem a maximális hatásfokon üzemeltetni a szivattyúkat.
 
 				</article>
 			</section>
@@ -113,7 +88,7 @@
                             				</li>
                             				<li class="selected"><a href="ATG_Negy_Negyedes_jelleggorbek.html">6: Négy Negyedes Jelleggörbék</a>
                             				</li>
-                            				<li class="selected"><a href="ATG_Hatasfok_es_Fajlagos.html">7: Hatásfok és Fajlagos</a>
+                            				<li class="selected"><a href="ATG_Hatasfok_es_Fajlagos.html">7: Hatásfok és Fajlagos Energiafogyasztás</a>
                             				</li>
 						</ul>
 					</li>
